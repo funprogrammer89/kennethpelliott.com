@@ -1,0 +1,6 @@
+I am working on a YouTube video that showcases how to use a project called, Git FTP, to push 
+code from a local repository to to an FTP server. There are a couple other videos on YT that 
+cover the topic but I will add my own spin on it and show how you can have source code for a 
+website on Github that is easy to 'sync' up with your hosting provider. Github has a hosting 
+service but only hosts static sites as far as I am aware which I think means no backend 
+software.  
