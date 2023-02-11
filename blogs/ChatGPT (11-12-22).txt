@@ -1,0 +1,1 @@
+ChatGPT</a> is an impressive technology that coders and many other people can leverage to do amazing work. The dataset is not real time since the machine learning model has to be trained before it can be queried, which means, it is trained on older data but the context awareness of the software makes it easy to interact with.
