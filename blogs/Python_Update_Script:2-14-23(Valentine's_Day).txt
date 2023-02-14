@@ -1,12 +1,18 @@
-Wrote a super simple Python script to prompt for an input and then update my local Git repo with any new/modified/deleted files. It then runs 'git status' to show me the updates to the repo. It commits the changes using the inputted text as the required commit message and pushs it to my GitHub repo. It again runs 'git status' to show me the repo is up-to-date. Finally, it also pushs changes to my ftp for my website files. I love it, as it makes updating multiple repos a breeze. Here is the code:
+Wrote a super simple Python script to prompt for an input and then update my local Git repo with any new/modified/deleted files. It then runs 'git status' to show me the updates to the repo. It commits the changes using the inputted text as the required commit message and pushs it to my GitHub repo. It again runs 'git status' to show me the repo is up-to-date. Finally, it also pushs changes to my ftp for my website files all along the way printing the current command it is executing. I love it, as it makes updating multiple repos a breeze. Here is the code:
 
 import os
 val = input("Enter commit text ")
+print ("----- RUNNING 'git add .' -----")
 os.system('git add .')
+print ("----- RUNNING 'git status' -----")
 os.system('git status')
+print ("----- RUNNING " + 'git commit -m "'+val+'" -----')
 os.system('git commit -m "'+val+'"')
+print("----- RUNNING 'git push origin master' -----")
 os.system('git push origin master')
+print("----- RUNNING 'git status' -----")
 os.system('git status')
+print("----- RUNNING 'git ftp push' -----")
 os.system('git ftp push')
 
 All I have to do is run 'python3 u.py' from my terminal and everything is taken care of. 'u.py' is the name that I used for the update script. I am considering making a YouTube video that showcases this script and the app Git FTP to demonstrate this functionality to others.
