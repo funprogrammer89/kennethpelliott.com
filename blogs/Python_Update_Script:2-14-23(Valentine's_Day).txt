@@ -1,4 +1,4 @@
-Wrote a super simple Python script to prompt for an input and then update my local Git repo and push it to my GitHub repo using the inputted text, then display my git status and also to push changes to my ftp for my website files. I love it as it makes updating multiple repos a breeze. Here is the code:
+Wrote a super simple Python script to prompt for an input and then update my local Git repo with any new/modified/deleted files. It then runs 'git status' to show me the updates to the repo. It commits the changes using the inputted text as the required commit message and pushs it to my GitHub repo. It again runs 'git status' to show me the repo is up-to-date. Finally it also pushs changes to my ftp for my website files. I love it as it makes updating multiple repos a breeze. Here is the code:
 
 import os
 val = input("Enter commit text ")
