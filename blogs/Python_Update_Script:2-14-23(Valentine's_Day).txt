@@ -1,5 +1,5 @@
 Wrote a super simple Python script to prompt for an input and then update my local Git repo and push it to my GitHub repo using the inputted text, then display my git status and also to push changes to my ftp for my website files. I love it as it makes updating multiple repos a breeze. Here is the code:
-<center>
+
 import os
 val = input("Enter commit text ")
 os.system('git add .')
@@ -8,5 +8,5 @@ os.system('git commit -m "'+val+'"')
 os.system('git push origin master')
 os.system('git status')
 os.system('git ftp push')
-</center>
+
 All I have to do is run 'python3 u.py' from my terminal and everything is taken care of. 'u.py' is the name that I used for the update script. I am considering making a YouTube video that showcases this script and the app Git FTP to demonstrate this functionality to others.
