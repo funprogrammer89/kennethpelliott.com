@@ -1,6 +1,6 @@
 import os
 val = input("Enter commit text ")
-print ("----- RUNNING 'git add .' -----")
+print ("f{\033[96m}----- RUNNING 'git add .' -----{\033[0m}")
 os.system('git add .')
 print ("----- RUNNING 'git status' -----")
 os.system('git status')
