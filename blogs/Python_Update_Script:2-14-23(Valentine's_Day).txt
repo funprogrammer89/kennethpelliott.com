@@ -1,1 +1,20 @@
-testing
+Wrote a super simple Python script to prompt for an inpput and then update my local Git repo and push it to my GitHub repo using the inputted text, then display my git status and also to push changes to my ftp for my website files. I love it as it makes updating multiple repos a breeze. Here is the code:
+
+import os
+val = input("Enter commit text ")
+
+cmd1 = 'git add .'
+cmd2 = 'git commit -m "'+val+'"'
+cmd3 = 'git push origin master'
+cmd4 = 'git status'
+cmd5 = 'git ftp push'
+
+os.system(cmd1)
+os.system(cmd2)
+os.system(cmd3)
+os.system(cmd4)
+os.system(cmd5)
+
+All I have to do is run 'Python3 u.py' and everything is taken care of. 'u.py' is the name that I used for the update script.
+
+
