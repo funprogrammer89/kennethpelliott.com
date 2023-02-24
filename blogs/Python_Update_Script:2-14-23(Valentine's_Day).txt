@@ -1,0 +1,18 @@
+Wrote a super simple (ss) Python script to prompt for an input and then update my local Git repo with any new/modified/deleted files. It then runs 'git status' to show me the updates to the repo. It commits the changes using the inputted text as the required commit message and pushs it to my GitHub repo. It again runs 'git status' to show me the repo is up-to-date. Finally, it also pushs changes to my ftp for my website files all along the way printing the current command it is executing in a standout Cyan color. I love it, as it makes updating multiple repos a breeze. Here is the code:
+
+import os
+val = input("Enter commit text ")
+print ("\033[96m----- RUNNING 'git add .' -----\033[0m")
+os.system('git add .')
+print ("\033[96m----- RUNNING 'git status' -----\033[0m")
+os.system('git status')
+print ("\033[96m----- RUNNING 'git commit -m \""+val+"\"' -----\033[0m")
+os.system('git commit -m "'+val+'"')
+print("\033[96m----- RUNNING 'git push origin master' -----\033[0m")
+os.system('git push origin master')
+print("\033[96m----- RUNNING 'git status' -----\033[0m")
+os.system('git status')
+print("\033[96m----- RUNNING 'git ftp push' -----\033[0m")
+os.system('git ftp push')
+
+All I have to do is run 'python3 u.py' from my terminal and everything is taken care of. 'u.py' is the name that I used for the update script. I am considering making a YouTube video that showcases this script and the app Git FTP to demonstrate this functionality to others.
